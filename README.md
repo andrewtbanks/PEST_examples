@@ -4,6 +4,8 @@ Code demonstrating Pilot Point technique for highly parameterized inversion with
 Required python packages: Matplotlib, flopy, numpy, shutil, skimage
 
 Required Software: PEST http://www.pesthomepage.org/About_Us.php - Make sure PEST is specified as a system PATH variable on your machine.
+
+A Power point presentation summarizing results from these simulations is included as "Pest Trial and Errors.ppt" 
 ______________________________________________________________________________________________________________
 There are four examples included in this repository, each in its own directory. 
 
@@ -18,7 +20,16 @@ Within each example there are four folders
 ...\Truth :contains the MODFLOW model representing the truth. Experimental/Field measurments used by PEST originate from this model. Also contains python script to perform MODPATH simulations. 
 
 and a python script for generating figures "results_figures.py"
+_________________________________________________________________________________________________________________
+EXAMPLES 
 
+pilot_points_example_1     : 50 pilot points, spherical variogram model - good example of overfitting!
+
+pilot_points_example_2     : 12 pilot points, spherical variogram model
+
+pilot_points_tkreg_example : 12 pilot points, spherical variogram model, Tikhonov Regularisation
+
+fault_example              : 40 pilot points, spherical variogram, Used different truth model (6 high K units - 150m/d). 
 
 _________________________________________________________________________________________________________________
 TO RUN AN EXAMPLE
@@ -36,7 +47,8 @@ TO RUN AN EXAMPLE
 6) Navigate to ..xxx_example\pest and run  pest_input.py - This builds the PEST input files.The variable **fmain** may need to be modified.  
 
 7) To execute PEST, open Command Prompt in adminstrator mode and set the current directory to ...xxx_example\pest and enter the command 
- > **pest.exe example.pst** - This will run PEST for the given example
+            > **pest.exe example.pst** 
+   This will run PEST for the given example
  
  8) Once PEST has finished, navigate to ..xxx_example\Model_results\modflow and run "example_MF_pest_results.py" - This will generate a MODFLOW model based on the optimized pilot point parameter values delieved by PEST. The variable **fmain** may need to be modified.
  
