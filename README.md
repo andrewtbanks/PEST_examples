@@ -1,12 +1,31 @@
 # PEST_examples
-Code demonstrating Pilot Point technique for highly parameterized inversion with PEST  
+Code demonstrating Pilot Point technique for highly parameterized inversion with PEST 
 
-Required python packages: Matplotlib, flopy, numpy, shutil, skimage
 
-Required Software: PEST http://www.pesthomepage.org/About_Us.php - Make sure PEST is specified as a system PATH variable on your machine.
+Experimental/Field data generated using a "truth" MODfLOW model
+    - 800x500 cells, (1m x 1m)
+    - Constatnt heads North and South boundaries. 
+    - 2D scale-invariant gaussian random field for hydraulic conductivities 
+    - variant on this model used in fault_example has 6 high K units running E-W (150 m/day)
+Estimating cell-by-cell hydraulic conductivities for a simple MODFLOW model
+    - 80x50 cells, (10m x 10m)
+    - Constatnt heads North and South boundaries. 
+    
+A Power point presentation summarizing results from these simulations is included as "Pest Trial and Errors.ppt"** 
+________________________________________________________________________________________________________________
 
-A Power point presentation summarizing results from these simulations is included as "Pest Trial and Errors.ppt" 
+**Required python packages:**
+   Matplotlib, flopy, numpy, shutil, skimage
+
+**Required Software:** 
+   PEST http://www.pesthomepage.org/About_Us.php - Make sure PEST is specified as a system PATH variable on your machine.
+
+**Included software**
+   2D scale-invariant gaussian random field generator (gaussian_random_fields.py) -  https://github.com/bsciolla/gaussian-random-fields
+   MODFLOW 2005 (mf2006.exe) - https://www.usgs.gov/software/modflow-2005-usgs-three-dimensional-finite-difference-ground-water-model
+   MODPATH 6 (mp6.exe)  - https://www.usgs.gov/software/modpath-a-particle-tracking-model-modflow
 ______________________________________________________________________________________________________________
+
 There are four examples included in this repository, each in its own directory. 
 
 Within each example there are four folders 
@@ -21,7 +40,8 @@ Within each example there are four folders
 
 and a python script for generating figures "results_figures.py"
 _________________________________________________________________________________________________________________
-EXAMPLES 
+
+**EXAMPLES** 
 
 pilot_points_example_1     : 50 pilot points, spherical variogram model - good example of overfitting!
 
@@ -32,7 +52,8 @@ pilot_points_tkreg_example : 12 pilot points, spherical variogram model, Tikhono
 fault_example              : 40 pilot points, spherical variogram, Used different truth model (6 high K units - 150m/d). 
 
 _________________________________________________________________________________________________________________
-TO RUN AN EXAMPLE
+
+**TO RUN AN EXAMPLE**
 
 1) Open the directory correpsonding to the example. 
 
