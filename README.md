@@ -30,15 +30,24 @@ There are four examples included in this repository, each in its own directory.
 
 Within each example there are four folders 
 
-...\Model  :contains the MODFLOW model used by PEST and python scripts for initalizing pilot point data and kriging estimated values to the modflow model grid
+**...\Model**  
 
-...\Model_results :contains a clone fo the modflow model used by PEST, along with python scripts to perform MODPATH simulations 
+contains the MODFLOW model used by PEST and python scripts for initalizing pilot point data and kriging estimated values to the modflow model grid
 
-...\pest  :contains the python script for generating PEST input files 
+**...\Model_results** 
 
-...\Truth :contains the MODFLOW model representing the truth. Experimental/Field measurments used by PEST originate from this model. Also contains python script to perform MODPATH simulations. 
+contains a clone fo the modflow model used by PEST, along with python scripts to perform MODPATH simulations 
 
-and a python script for generating figures "results_figures.py"
+**...\pest**  
+
+contains the python script for generating PEST input files 
+
+**...\Truth** 
+
+contains the MODFLOW model representing the truth. Experimental/Field measurments used by PEST originate from this model. Also contains python script to perform MODPATH simulations. 
+
+
+**and a python script for generating figures "results_figures.py"**
 _________________________________________________________________________________________________________________
 
 **EXAMPLES** 
