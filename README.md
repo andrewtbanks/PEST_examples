@@ -2,13 +2,22 @@
 Code demonstrating Pilot Point technique for highly parameterized inversion with PEST 
 
 Experimental/Field data generated using a "truth" MODfLOW model
+
     - 800x500 cells, (1m x 1m)
+    
     - Constatnt heads North and South boundaries. 
+    
     - 2D scale-invariant gaussian random field for hydraulic conductivities 
+    
     - variant on this model used in fault_example has 6 high K units running E-W (150 m/day)
+    
 Estimating cell-by-cell hydraulic conductivities for a simple MODFLOW model
+
     - 80x50 cells, (10m x 10m)
+    
     - Constatnt heads North and South boundaries. 
+    
+    
     
 A Power point presentation summarizing results from these simulations is included as "Pest Trial and Errors.ppt"** 
 ________________________________________________________________________________________________________________
