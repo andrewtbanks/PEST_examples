@@ -1,7 +1,6 @@
 # PEST_examples
 Code demonstrating Pilot Point technique for highly parameterized inversion with PEST 
 
-
 Experimental/Field data generated using a "truth" MODfLOW model
     - 800x500 cells, (1m x 1m)
     - Constatnt heads North and South boundaries. 
@@ -32,19 +31,19 @@ Within each example there are four folders
 
 **...\Model**  
 
-contains the MODFLOW model used by PEST and python scripts for initalizing pilot point data and kriging estimated values to the modflow model grid
+    contains the MODFLOW model used by PEST and python scripts for initalizing pilot point data and kriging estimated values to the modflow model grid
 
 **...\Model_results** 
 
-contains a clone fo the modflow model used by PEST, along with python scripts to perform MODPATH simulations 
+    contains a clone fo the modflow model used by PEST, along with python scripts to perform MODPATH simulations 
 
 **...\pest**  
 
-contains the python script for generating PEST input files 
+    contains the python script for generating PEST input files 
 
 **...\Truth** 
 
-contains the MODFLOW model representing the truth. Experimental/Field measurments used by PEST originate from this model. Also contains python script to perform MODPATH simulations. 
+    contains the MODFLOW model representing the truth. Experimental/Field measurments used by PEST originate from this model. Also contains python script to perform MODPATH simulations. 
 
 
 **and a python script for generating figures "results_figures.py"**
