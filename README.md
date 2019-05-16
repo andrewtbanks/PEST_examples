@@ -1,5 +1,9 @@
 # PEST_examples
 Code demonstrating Pilot Point technique for highly parameterized inversion with PEST 
+Somewhat controversial approach, pioneered by Doherty et al (2015)
+
+Doherty, J. (2003), Ground Water Model Calibration Using Pilot Points and Regularization. Groundwater, 41: 170-177. doi:10.1111/j.1745-6584.2003.tb02580.x
+
 
 Experimental/Field data generated using a "truth" MODfLOW model
 
